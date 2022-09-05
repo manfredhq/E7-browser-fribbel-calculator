@@ -28,13 +28,17 @@ function CalculateGS(){
         let CritChance = stats[10].value;
 
         let gs = 0;
+        console.log(Math.round((attackPercent + Number.EPSILON) * 100) / 100 );
         gs = +gs + +Math.round((attackPercent + Number.EPSILON) * 100) / 100 ;
+        console.log(gs);
         gs = +gs + +Math.round((defensePercent + Number.EPSILON) * 100) / 100 ;
         gs = +gs + +Math.round((healthPercent + Number.EPSILON) * 100) / 100 ;
         gs = +gs + +Math.round((Effectiveness + Number.EPSILON) * 100) / 100 ;
         gs = +gs + +Math.round((EffectResistance + Number.EPSILON) * 100) / 100 ;
         gs = +gs + +Math.round((Speed * (8/4) + Number.EPSILON) * 100) / 100 ;
 
+        console.log(Math.round((Speed * (8/4) + Number.EPSILON) * 100) / 100 );
+        console.log(gs);
         gs = +gs + +Math.round((CritDamage * (8/7) + Number.EPSILON) * 100) / 100 ;
         gs = +gs + +Math.round((CritChance * (8/5) + Number.EPSILON) * 100) / 100 ;
 
