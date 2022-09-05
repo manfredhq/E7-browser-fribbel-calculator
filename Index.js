@@ -51,3 +51,12 @@ function CalculateGS(){
         let gsText = document.getElementsByClassName("gsText")[0];
         gsText.innerHTML = "This gear score is: " +gs;
 }
+
+
+function ResetInputs(){
+    let stats = document.querySelectorAll("input");
+
+    stats.forEach(stat => {
+        stat.value = ''
+    });
+}
