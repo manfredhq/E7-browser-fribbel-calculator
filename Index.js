@@ -26,5 +26,21 @@ function CalculateGS(){
         let Speed = stats[8].value;
         let CritDamage = stats[9].value;
         let CritChance = stats[10].value;
-        alert(attackPercent);
+
+        let gs = 0;
+        gs += attackPercent;
+        gs += defensePercent;
+        gs += healthPercent;
+        gs += Effectiveness;
+        gs += EffectResistance;
+        gs += Speed * (8/4);
+
+        gs += CritDamage * (8/7);
+        gs += CritChance * (8/5);
+
+        gs += attackFlat * 3.46 / 39;
+        gs += defenseFlat * 4.99 / 31;
+        gs += healthFlat * 3.09 / 174;
+
+        alert(gs);
 }
