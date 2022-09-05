@@ -14,18 +14,17 @@ function CalculateGS(){
         */
         let stats = document.querySelectorAll("input");
 
-        form.onsubmit = function() {
-            let attackPercent = stats[0].value;
-            let attackFlat = stats[1].value;
-            let defensePercent = stats[2].value;
-            let defenseFlat = stats[3].value;
-            let healthPercent = stats[4].value;
-            let healthFlat = stats[5].value;
-            let Effectiveness = stats[6].value;
-            let EffectResistance = stats[7].value;
-            let Speed = stats[8].value;
-            let CritDamage = stats[9].value;
-            let CritChance = stats[10].value;
-            alert(attackPercent);
-        };
+        
+        let attackPercent = stats[0].value;
+        let attackFlat = stats[1].value;
+        let defensePercent = stats[2].value;
+        let defenseFlat = stats[3].value;
+        let healthPercent = stats[4].value;
+        let healthFlat = stats[5].value;
+        let Effectiveness = stats[6].value;
+        let EffectResistance = stats[7].value;
+        let Speed = stats[8].value;
+        let CritDamage = stats[9].value;
+        let CritChance = stats[10].value;
+        alert(attackPercent);
 }
