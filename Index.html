@@ -2,20 +2,45 @@
 <html>
 <body>
     <form>
-        Username: <input type="text" name="username" /> 
-         
-        Password:<input type="text" name="password" />
-        
-        Email:<input type="text" name="email" />
-          
-        <button>submit</button>
+        attack %: <input type="text" name="attack%" /> 
+        attack  : <input type="text" name="attack" /> 
+        <br>
+        def %: <input type="text" name="def%" /> 
+        def  : <input type="text" name="def" /> 
+        <br>
+        health %: <input type="text" name="health%" /> 
+        health  : <input type="text" name="health" /> 
+        <br>
+        Effectiveness: <input type="text" name="Effectiveness" /> 
+        <br>
+        Effect Resistance: <input type="text" name="EffectResistance" /> 
+        <br>
+        Speed: <input type="text" name="Speed" /> 
+        <br>
+        Crit Damage: <input type="text" name="CritDamage" /> 
+        <br>
+        Crit Chance: <input type="text" name="CritChance" /> 
+        <button>Calc</button>
     </form>
 
     <script>
+        /*
+        Score = Attack %
+        + Defense %
+        + Hp %
+        + Effectiveness
+        + Effect Resistance
+        + Speed * (8/4)
+        + Crit Damage * (8/7)
+        + Crit Chance * (8/5)
+        + Flat Attack * 3.46 / 39
+        + Flat Defense * 4.99 / 31
+        + Flat Hp * 3.09 / 174
+        */
         let form = document.getElementsByTagName("form")[0];
 
         form.onsubmit = function() {
-            // check all rules
+            alert("t");
         };
     </script>
 </body>
