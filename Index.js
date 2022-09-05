@@ -28,19 +28,19 @@ function CalculateGS(){
         let CritChance = stats[10].value;
 
         let gs = 0;
-        gs += attackPercent;
-        gs += defensePercent;
-        gs += healthPercent;
-        gs += Effectiveness;
-        gs += EffectResistance;
-        gs += Speed * (8/4);
+        gs += Math.round((attackPercent + Number.EPSILON) * 100) / 100 ;
+        gs += Math.round((defensePercent + Number.EPSILON) * 100) / 100 ;
+        gs += Math.round((healthPercent + Number.EPSILON) * 100) / 100 ;
+        gs += Math.round((Effectiveness + Number.EPSILON) * 100) / 100 ;
+        gs += Math.round((EffectResistance + Number.EPSILON) * 100) / 100 ;
+        gs += Math.round((Speed * (8/4) + Number.EPSILON) * 100) / 100 ;
 
-        gs += CritDamage * (8/7);
-        gs += CritChance * (8/5);
+        gs += Math.round((CritDamage * (8/7) + Number.EPSILON) * 100) / 100 ;
+        gs += Math.round((CritChance * (8/5) + Number.EPSILON) * 100) / 100 ;
 
-        gs += attackFlat * 3.46 / 39;
-        gs += defenseFlat * 4.99 / 31;
-        gs += healthFlat * 3.09 / 174;
+        gs += Math.round((attackFlat * 3.46 / 39 + Number.EPSILON) * 100) / 100 ;
+        gs += Math.round((defenseFlat * 4.99 / 31 + Number.EPSILON) * 100) / 100 ;
+        gs += Math.round((healthFlat * 3.09 / 174 + Number.EPSILON) * 100) / 100 ;
 
         alert(gs);
 }
