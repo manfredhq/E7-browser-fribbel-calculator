@@ -46,5 +46,8 @@ function CalculateGS(){
         gs = +gs + +Math.round((defenseFlat * 4.99 / 31 + Number.EPSILON) * 100) / 100 ;
         gs = +gs + +Math.round((healthFlat * 3.09 / 174 + Number.EPSILON) * 100) / 100 ;
 
-        alert(gs);
+        gs = Math.round((+gs + Number.EPSILON) * 100) / 100 ;
+
+        let gsText = document.getElementsByClassName("gsText")[0];
+        gsText.innerHTML = "This gear score is: " +gs;
 }
