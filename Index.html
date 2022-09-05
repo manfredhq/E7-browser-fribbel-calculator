@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script src="Index.js"></script>
+    </head>
 <body>
-    <form>
         attack %: <input type="text" name="attack%" /> 
         attack  : <input type="text" name="attack" /> 
         <br>
@@ -20,40 +22,10 @@
         Crit Damage: <input type="text" name="CritDamage" /> 
         <br>
         Crit Chance: <input type="text" name="CritChance" /> 
-        <button>Calc</button>
-    </form>
+        <br>
+        <button type="button" onclick="CalculateGS()">Calc</button>
 
-    <script>
-        /*
-        Score = Attack %
-        + Defense %
-        + Hp %
-        + Effectiveness
-        + Effect Resistance
-        + Speed * (8/4)
-        + Crit Damage * (8/7)
-        + Crit Chance * (8/5)
-        + Flat Attack * 3.46 / 39
-        + Flat Defense * 4.99 / 31
-        + Flat Hp * 3.09 / 174
-        */
-        let stats = document.querySelectorAll("input");
-
-        form.onsubmit = function() {
-            let attackPercent = stats[0].value;
-            let attackFlat = stats[1].value;
-            let defensePercent = stats[2].value;
-            let defenseFlat = stats[3].value;
-            let healthPercent = stats[4].value;
-            let healthFlat = stats[5].value;
-            let Effectiveness = stats[6].value;
-            let EffectResistance = stats[7].value;
-            let Speed = stats[8].value;
-            let CritDamage = stats[9].value;
-            let healthCritChanceFlat = stats[10].value;
-            alert(attackPercent);
-        };
-    </script>
+    
 </body>
 
 </html>
