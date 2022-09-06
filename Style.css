@@ -4,3 +4,7 @@
     grid-gap: 1mm;
     padding: 1mm;
   }
+
+.grid-content {
+    text-align: center;
+  }
