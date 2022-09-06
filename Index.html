@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="Style.css">
         <script src="Index.js"></script>
     </head>
 <body>
-        attack %: <input type="number" name="attack%" /> 
-        attack  : <input type="number" name="attack" /> 
-        <br>
-        def %: <input type="number" name="def%" /> 
-        def  : <input type="number" name="def" /> 
-        <br>
-        health %: <input type="number" name="health%" /> 
-        health  : <input type="number" name="health" /> 
-        <br>
-        Effectiveness: <input type="number" name="Effectiveness" /> 
-        <br>
-        Effect Resistance: <input type="number" name="EffectResistance" /> 
-        <br>
-        Speed: <input type="number" name="Speed" /> 
-        <br>
-        Crit Damage: <input type="number" name="CritDamage" /> 
-        <br>
-        Crit Chance: <input type="number" name="CritChance" /> 
-        <br>
-        <button type="button" onclick="CalculateGS()">Calc</button>
-        <button type="button" onclick="ResetInputs()">Reset</button>
-
-        <div class="gsText"></div>
+    <div class="column">
+            attack %: <input type="number" name="attack%" />
+            attack  : <input type="number" name="attack" /> 
+            <br>
+            def %: <input type="number" name="def%" /> 
+            def  : <input type="number" name="def" /> 
+            <br>
+            health %: <input type="number" name="health%" /> 
+            health  : <input type="number" name="health" /> 
+            <br>
+            Effectiveness: <input type="number" name="Effectiveness" /> 
+            <br>
+            Effect Resistance: <input type="number" name="EffectResistance" /> 
+            <br>
+            Speed: <input type="number" name="Speed" /> 
+            <br>
+            Crit Damage: <input type="number" name="CritDamage" /> 
+            <br>
+            Crit Chance: <input type="number" name="CritChance" /> 
+            <br>
+            <button type="button" onclick="CalculateGS()">Calc</button>
+            <button type="button" onclick="ResetInputs()">Reset</button>
+    
+            <div class="gsText"></div>
+    </div>
+        
+        
 
 </body>
 
