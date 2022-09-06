@@ -1,3 +1,6 @@
-.column {
-    column-count: 3;
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1mm;
+    padding: 1mm;
   }
